@@ -7,7 +7,8 @@ namespace Planner
     {
         static void Main(string[] args)
         {
-            // var allBuildings = new List<Building>();
+            // Create a list of all buildings
+            var allBuildings = new List<Building>();
 
             // Create instances of buildings
             Building FiveOneTwoEigth = new Building("512 8th Avenue");
@@ -37,9 +38,9 @@ namespace Planner
             FourThreeNineFirst.Purchase("Scarry Boy");
 
             // add each building to allBuildings List
-            // allBuildings.Add(FiveOneTwoEigth);
-            // allBuildings.Add(TwentyFifthSecond);
-            // allBuildings.Add(FourThreeNineFirst);
+            allBuildings.Add(FiveOneTwoEigth);
+            allBuildings.Add(TwentyFifthSecond);
+            allBuildings.Add(FourThreeNineFirst);
 
             //New instance of City 
             City Joeytown = new City()
@@ -62,60 +63,3 @@ namespace Planner
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// using System;
-// using System.Collections.Generic;
-
-// namespace Planner
-// {
-//     class Program
-//     {
-//         static void Main(string[] args)
-//         {
-
-//             List<Building> allBuildings = new List<Building>(); // Create a list for the buildings to go into
-
-//             Building FiveOneTwoEigth = new Building("512 8th Avenue"); // Create a new instance of Building
-//             FiveOneTwoEigth.Width = 100; // 
-//             FiveOneTwoEigth.Depth = 200;
-//             FiveOneTwoEigth.Stories = 15;
-
-
-
-//             Building ThreeFourFiveEleventh = new Building("345 11th Ave");
-//             ThreeFourFiveEleventh.Width = 85;
-//             ThreeFourFiveEleventh.Depth = 220;
-//             ThreeFourFiveEleventh.Stories = 25;
-
-
-
-//             Building TwoNineFourth = new Building("29 4th street");
-//             TwoNineFourth.Width = 100;
-//             TwoNineFourth.Depth = 350;
-//             TwoNineFourth.Stories = 10;
-
-//             FiveOneTwoEigth.Construct(); // Construct a building
-//             ThreeFourFiveEleventh.Construct();
-//             TwoNineFourth.Construct();
-
-//             allBuildings.Add(FiveOneTwoEigth); // Add building to List<Building> allBuildings
-//             allBuildings.Add(ThreeFourFiveEleventh);
-//             allBuildings.Add(TwoNineFourth);
-
-//             FiveOneTwoEigth.Purchase("Joey"); // Purchase a building which prints to console on Building.cs
-//             ThreeFourFiveEleventh.Purchase("Kenny");
-//             TwoNineFourth.Purchase("Terry");
-//         }
-//     }
-// }
